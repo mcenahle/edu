@@ -1,0 +1,37 @@
+---
+import "../styles/global.scss";
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
+import { Icon } from "astro-icon/components";
+
+import "ucla-design-systems/build/css/ucla-lib.min.css";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      rel="icon"
+      href="https://resources.mcenahle.page/sites/edu.mcenahle.page/pictures/favicon.ico"
+    />
+
+    <meta name="generator" content={Astro.generator} />
+    <title>
+      {title ? `${title} | edu.mcenahle.page` : "edu.mcenahle.page"}
+    </title>
+  </head>
+  <body>
+    <Navbar />
+    <slot />
+    <Footer />
+  </body>
+
+  <script>
+    import { Navigation } from "ucla-design-systems/build/js/ucla-lib-scripts.esm.js";
+
+    Navigation.initAll();
+  </script>
+</html>

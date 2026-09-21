@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "成绩表";
+---
+
+<Layout title={title}>
+  <div class="container">
+    <h2>{title}</h2>
+
+    <div class="ucla-table__responsive" style="margin-top: 12px;">
+      <table class="ucla-table ucla-table__border">
+        <thead>
+          <tr>
+            <th>考次</th>
+            <th>考试日期</th>
+            <th>考试成绩</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>英语六级模考 - 第一次</td>
+            <td>2026-10-?</td>
+            <td><i>待定</i></td>
+          </tr>
+          <tr>
+            <td>计算机二级（Web） - 第一次</td>
+            <td>2026-11-?</td>
+            <td><i>待定</i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</Layout>

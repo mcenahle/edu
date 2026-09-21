@@ -1,0 +1,49 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="ucla-global-footer">
+  <div class="ucla-global-footer__container">
+    <p class="ucla-global-footer__copyright">
+      &copy; <span id="ucla-global-footer__copyright-year">
+        <script>
+          document
+            .getElementById("ucla-global-footer__copyright-year")
+            .appendChild(document.createTextNode(new Date().getFullYear()));
+        </script>
+      </span> edu.mcenahle.page. Regents of the&nbsp;
+      <a
+        class="copy__link-a dark"
+        href="https://www.universityofcalifornia.edu/"
+        target="_blank"
+        ><u>University of California</u> <Icon name="mdi:open-in-new" /></a
+      >
+    </p>
+
+    <ul class="ucla-global-footer__list">
+      <li class="ucla-global-footer__list-item">
+        <a
+          class="ucla-global-footer__link"
+          href="https://designsystem.brand.ucla.edu/"
+          target="_blank"
+          ><u>Design System of UCLA</u> <Icon name="mdi:open-in-new" /></a
+        >
+      </li>
+      <li class="ucla-global-footer__list-item">
+        <a
+          class="ucla-global-footer__link"
+          href="https://mcenahle.care/"
+          target="_blank"
+          ><u>mcenahle.care</u> <Icon name="mdi:open-in-new" /></a
+        >
+      </li>
+      <li class="ucla-global-footer__list-item">
+        <a
+          class="ucla-global-footer__link"
+          href="https://mcenahle.dev/"
+          target="_blank"><u>mcenahle.dev</u> <Icon name="mdi:open-in-new" /></a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

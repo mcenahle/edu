@@ -1,0 +1,68 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "英语六级模考";
+---
+
+<Layout title={title}>
+  <div class="container">
+    <h2>{title}</h2>
+    <p>
+      英语六级下次考试将于2026-12-12下午开始。那么为了准备该考试，拟定进行数次模考。
+    </p>
+
+    <div class="ucla-table__responsive" style="margin-top: 12px;">
+      <table class="ucla-table ucla-table__border">
+        <thead>
+          <tr>
+            <th>考次</th>
+            <th>考试日期</th>
+            <th>考试试卷</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>第一次</td>
+            <td>2026-10-?</td>
+            <td><i>待定</i></td>
+          </tr>
+          <tr>
+            <td>第二次</td>
+            <td>2026-11-?</td>
+            <td><i>待定</i></td>
+          </tr>
+          <tr>
+            <td>第三次</td>
+            <td>2026-12-?</td>
+            <td><i>待定</i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div
+        class="ucla-alert ucla-alert--primary"
+        role="alert"
+        style="margin-top: 12px;"
+      >
+        <svg
+          class="ucla-alert--icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+          xml:space="preserve"
+          role="img"
+          aria-label="Information:"
+          ><path
+            d="M24 4C13 4 4 13 4 24s9 20 20 20 20-9 20-20S35 4 24 4zm2 30h-4v-4h4v4zm0-8h-4V14h4v12z"
+          ></path></svg
+        >
+        12月1日9时起，完成CET笔试报名及缴费的考生可&nbsp;<a
+          href="https://cet-bm.neea.edu.cn/Home/QuickPrintTestTicket"
+          target="_blank"
+          ><u>登录CET报名网站</u> <Icon name="mdi:open-in-new" /></a
+        > &nbsp;下载、打印笔试准考证。
+      </div>
+    </div>
+  </div>
+</Layout>

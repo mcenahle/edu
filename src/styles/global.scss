@@ -1,0 +1,231 @@
+@import url("https://resources.mcenahle.page/fonts/source-han-serif/regular/result.css");
+@import url("https://resources.mcenahle.page/fonts/source-han-serif/bold/result.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.container {
+  width: 1200px !important;
+  max-width: 100% !important;
+  margin: 20px auto 80px auto !important;
+  padding-inline: 1.5rem;
+  p {
+    line-height: 30px !important;
+  }
+}
+
+h2,
+h3 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.article {
+  text-indent: 2em;
+}
+
+#primary-nav-search {
+  display: none;
+}
+
+.external-16 {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.external-18 {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+a {
+  text-decoration: none !important;
+  &:hover,
+  &:focus {
+    text-decoration: none !important;
+  }
+}
+
+a:not([class]):visited {
+  color: #00598c !important;
+  text-decoration: underline;
+}
+
+u {
+  text-decoration: underline;
+}
+
+@media (max-width: 959px) {
+  .ucla-main-nav {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 33%);
+  }
+}
+
+.posts {
+  text-indent: 2em;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: "MN Source Han Serif SC", serif;
+
+  a {
+    text-decoration: underline !important;
+  }
+
+  p,
+  li,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 18px;
+    line-height: 34px;
+  }
+
+  img {
+    max-width: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto;
+  }
+}
+
+.post-meta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  color: #000000;
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "JetBrainsMono-Regular";
+  src: url("https://www.mcenahle.org.cn/fonts/JetBrainsMono-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+code {
+  overflow-wrap: anywhere;
+  background-color: transparent !important;
+  font-size: 100%;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #333333;
+  font-family: "JetBrainsMono-Regular" !important;
+}
+
+blockquote {
+  border-left: 5px solid #b3b3b3;
+  margin: 20px 0 20px 0;
+  padding: 0 16px;
+  font-size: 18px;
+}
+
+.posts a {
+  color: #00598c;
+  &:hover {
+    color: #0079bf;
+  }
+  &:active {
+    color: #003b5c;
+  }
+}
+
+.ucla-dept-footer__nav a:not([class]),
+.ucla-dept-footer a:not([class]),
+.ucla-dept-footer__nav a:not([class]):focus,
+.ucla-dept-footer a:not([class]):focus,
+.ucla-dept-footer__nav a:not([class]):visited,
+.ucla-dept-footer a:not([class]):visited {
+  color: white !important;
+}
+
+.ucla-dept-footer__nav a:not([class]):hover,
+.ucla-dept-footer a:not([class]):hover,
+.ucla-dept-footer__nav a:not([class]):active,
+.ucla-dept-footer a:not([class]):active {
+  color: black !important;
+}
+
+.external-link::after {
+  content: "";
+  display: inline-block;
+
+  width: 1em;
+  height: 1em;
+  margin-left: 0.2em;
+
+  vertical-align: -0.125em;
+
+  background-color: currentColor;
+
+  -webkit-mask: url("/images/open-in-new.svg") center / contain no-repeat;
+  mask: url("/images/open-in-new.svg") center / contain no-repeat;
+}
+
+.ucla-breadcrumb__list-item:last-child {
+  min-width: 0;
+}
+
+.ucla-breadcrumb__list-item:last-child a {
+  display: block;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+b {
+  font-weight: bolder;
+}
+
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img {
+  text-indent: 0em;
+}
+
+ol {
+  margin: 0rem 0 0 1.5rem !important;
+}
+
+.container {
+  li {
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+}
+
+li + li {
+  margin-top: 0rem !important;
+}
+
+i {
+  font-style: italic;
+}
