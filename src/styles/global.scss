@@ -190,6 +190,10 @@ blockquote > cite {
   color: black !important;
 }
 
+.ucla-related-link:not(:last-child) {
+  margin-bottom: -0.1rem !important;
+}
+
 .external-link::after {
   content: "";
   display: inline-block;
