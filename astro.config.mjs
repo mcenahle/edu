@@ -4,7 +4,7 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://edu.mcenahle.page",
+  site: "https://mcenahle.edu.pl",
   trailingSlash: "always",
   prefetch: true,
   devToolbar: {
