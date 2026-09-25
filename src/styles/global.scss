@@ -153,13 +153,15 @@ blockquote > cite {
   text-align: end;
 }
 
-img {
-  max-width: 100%;
-  width: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 4px auto;
+.container {
+  img {
+    max-width: 100%;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px auto;
+  }
 }
 
 .posts a {
