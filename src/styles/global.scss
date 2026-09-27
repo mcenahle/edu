@@ -255,3 +255,11 @@ li + li {
 i {
   font-style: italic;
 }
+
+.review-width {
+  margin: 0 auto;
+  padding: 1rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
