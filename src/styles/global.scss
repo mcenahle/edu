@@ -195,6 +195,12 @@ blockquote > cite {
   margin-bottom: -0.1rem !important;
 }
 
+@media (min-width: 960px) {
+  .ucla-secondary-nav__link {
+    margin: 0 4px;
+  }
+}
+
 .external-link::after {
   content: "";
   display: inline-block;
