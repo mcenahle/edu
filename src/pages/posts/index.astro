@@ -15,14 +15,14 @@ const allPosts = Object.values(
 const posts = allPosts.slice(0, POSTS_PER_PAGE);
 const totalPages = Math.ceil(allPosts.length / POSTS_PER_PAGE);
 
-const title = "自考模考相关文章";
+const title = "相关文章";
 ---
 
 <Layout title={title}>
   <div class="container">
     <h2>{title}</h2>
 
-    <p>自考模考相关文章</p>
+    <p>相关文章</p>
 
     <article class="ucla-card ucla-card__story">
       {
@@ -35,7 +35,7 @@ const title = "自考模考相关文章";
                 href={post.url}
                 title={post.frontmatter.title}
               >
-                {post.frontmatter.title}
+                <u>{post.frontmatter.title}</u>
               </a>
             </h3>
             <p class="ucla-card__author">By {post.frontmatter.author}</p>
