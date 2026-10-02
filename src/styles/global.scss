@@ -68,6 +68,22 @@ u {
   text-decoration: underline;
 }
 
+.external-link::after {
+  content: "";
+  display: inline-block;
+
+  width: 1em;
+  height: 1em;
+  margin-left: 0.2em;
+
+  vertical-align: -0.125em;
+
+  background-color: currentColor;
+
+  -webkit-mask: url("/images/open-in-new.svg") center / contain no-repeat;
+  mask: url("/images/open-in-new.svg") center / contain no-repeat;
+}
+
 @media (max-width: 959px) {
   .ucla-main-nav {
     box-shadow: 0 5px 10px rgb(0 0 0 / 33%);
