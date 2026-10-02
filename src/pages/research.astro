@@ -1,0 +1,30 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "个人迷你小论文";
+---
+
+<Layout title={title}>
+  <div class="container">
+    <h2>{title}</h2>
+
+    <p>
+      <i
+        >Leisure Activities and Academic Performance among College Students: A
+        Brief Literature Review</i
+      >
+    </p>
+    <p>
+      Chenghao Ge · 2026 · DOI: <a
+        href="https://doi.org/10.5281/zenodo.22996542"
+        target="_blank"
+        ><u>10.5281/zenodo.22996542</u> <Icon name="mdi:open-in-new" /></a
+      >
+    </p>
+    <iframe
+      src="/pdfjs/web/viewer.html?file=/documents/research/Leisure Activities and Academic Performance among College Students A Brief Literature Review.pdf"
+    ></iframe>
+  </div>
+</Layout>
