@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "网站相关资源许可证";
+---
+
+<Layout title={title}>
+  <div class="container">
+    <h2>{title}</h2>
+
+    <p>
+      <b>Coolicons — external-link icon</b>（<svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="1em"
+        height="1em"
+        viewBox="0 0 24 24"
+      >
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M10 5H8.2c-1.12 0-1.68 0-2.108.218a2 2 0 0 0-.874.874C5 6.52 5 7.08 5 8.2v7.6c0 1.12 0 1.68.218 2.108a2 2 0 0 0 .874.874c.427.218.987.218 2.105.218h7.606c1.118 0 1.677 0 2.104-.218c.377-.192.683-.498.875-.874c.218-.428.218-.987.218-2.105V14m1-5V4m0 0h-5m5 0l-7 7"
+        ></path>
+      </svg>
+      ）
+    </p>
+    <p>
+      <a
+        href="https://icon-sets.iconify.design/ci/external-link/"
+        target="_blank"
+        ><u>“external-link” icon</u> <Icon name="mdi:open-in-new" /></a
+      > from Coolicons, created by Kryston Schwarze, licensed under <a
+        href="https://creativecommons.org/licenses/by/4.0/"
+        target="_blank"><u>CC BY 4.0</u> <Icon name="mdi:open-in-new" /></a
+      >. Modified for use on this website, if applicable.
+    </p>
+  </div>
+</Layout>
