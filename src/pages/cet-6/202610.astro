@@ -1,0 +1,59 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "英语六级模考-10月";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+
+    <p>考试日期：暂定2026-10-21下午/22下午。</p>
+
+    <div style="margin-top: 12px;">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>模块</th>
+            <th>题量</th>
+            <th>分值</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>时态、语态、主谓一致</td>
+            <td>10题</td>
+            <td>20分</td>
+          </tr>
+          <tr>
+            <td>定语从句、名词性从句</td>
+            <td>10题</td>
+            <td>20分</td>
+          </tr>
+          <tr>
+            <td>非谓语动词、虚拟语气</td>
+            <td>10题</td>
+            <td>20分</td>
+          </tr>
+          <tr>
+            <td>句子改错</td>
+            <td>5题</td>
+            <td>20分</td>
+          </tr>
+          <tr>
+            <td>汉译英（综合语法）</td>
+            <td>4题</td>
+            <td>20分</td>
+          </tr>
+          <tr
+            ><td>合计</td>
+            <td>39题</td>
+            <td>100分</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</Layout>
