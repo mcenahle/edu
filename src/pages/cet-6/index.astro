@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
 import { Icon } from "astro-icon/components";
 
@@ -24,9 +24,9 @@ const title = "英语六级模考";
         </thead>
         <tbody>
           <tr>
-            <td>第一次</td>
-            <td>2026-10-?</td>
-            <td><i>待定</i></td>
+            <td><a href="202610/"><u>第一次</u></a></td>
+            <td><i>暂定2026-10-21下午/22下午</i></td>
+            <td><i>待定，目前暂定为语法专项试卷</i></td>
           </tr>
           <tr>
             <td>第二次</td>
@@ -42,12 +42,14 @@ const title = "英语六级模考";
       </table>
     </div>
 
-    <p style="margin-top: 12px;">
+    <div class="alert alert-primary" role="alert" style="margin-top: 12px;">
+      <b>获取 CET 准考证时间</b>
+      <hr />
       12月1日9时起，完成CET笔试报名及缴费的考生可 <a
         href="https://cet-bm.neea.edu.cn/Home/QuickPrintTestTicket"
         target="_blank"
         ><u>登录CET报名网站</u> <Icon name="mdi:open-in-new" /></a
       > 下载、打印笔试准考证。
-    </p>
+    </div>
   </div>
 </Layout>
