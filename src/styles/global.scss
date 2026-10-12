@@ -1,3 +1,6 @@
+@import "/fonts/SongtiSC/regular/result.css";
+@import "/fonts/SongtiSC/bold/result.css";
+
 @font-face {
   font-family: "Inter";
   src: url("/fonts/InterVariable.woff2") format("woff2");
@@ -207,7 +210,7 @@ iframe {
 
 @font-face {
   font-family: "JetBrainsMono-Regular";
-  src: url("https://www.mcenahle.org.cn/fonts/JetBrainsMono-Regular.woff2")
+  src: url("https://mcenahle.dev/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2")
     format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -224,6 +227,8 @@ code {
 }
 
 .posts {
+  font-family: "Songti SC";
+
   text-indent: 2em;
 
   margin-top: 10px;
