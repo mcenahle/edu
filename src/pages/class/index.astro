@@ -1,0 +1,93 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+
+const title = "班级课程";
+---
+
+<Layout title={title}>
+  <div class="mywords" style="font-family: 'Songti SC';">
+    <h2>{title}</h2>
+
+    <h4>班级课程分组情况：</h4>
+
+    <table class="table table-bordered text-center">
+      <tr style="font-weight: bolder;">
+        <td>课程名</td>
+        <td>时间</td>
+        <td>组员1</td>
+        <td>组员2</td>
+        <td>组员3</td>
+        <td>组员4</td>
+        <td>组员5</td>
+        <td>组员6</td>
+        <td>组员7</td>
+      </tr>
+      <tr>
+        <td>网络广告传播、品牌故事创意</td>
+        <td>周一下午、周四上午</td>
+        <td>李天天</td>
+        <td>周慕涵</td>
+        <td>徐佳媛</td>
+        <td>林懿如</td>
+        <td>汪子程</td>
+        <td>陈皓玥</td>
+        <td>葛琛昊</td>
+      </tr>
+      <tr>
+        <td>短视频创作</td>
+        <td>周二下午、周一上午</td>
+        <td colspan="10">课程未开始</td>
+      </tr>
+      <tr>
+        <td>广告新媒体传播</td>
+        <td>周二上午</td>
+        <td>高晨阳</td>
+        <td>潘佳骏</td>
+        <td>潘梓辰</td>
+        <td>葛伊洋</td>
+        <td>葛琛昊</td>
+        <td>万里航</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>商业广告实训</td>
+        <td>周二下午、周三上午</td>
+        <td colspan="10">课程未开始</td>
+      </tr>
+      <tr>
+        <td>都市消费文化</td>
+        <td>周五上午</td>
+        <td>柯文炫</td>
+        <td>陈彦恺</td>
+        <td>汪文浩</td>
+        <td>李博贤</td>
+        <td>葛琛昊</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <h4>课程作业：</h4>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" disabled />
+      <label class="form-check-label" for="checkDisabled">
+        <b>网络广告传播、品牌故事创意：</b>广告策划书撰写，本周先 word
+        文档，之后要进行 Illustrator 排版
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" disabled />
+      <label class="form-check-label" for="checkDisabled">
+        <b>广告新媒体传播：</b>未知
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" checked disabled />
+      <label class="form-check-label" for="checkDisabled">
+        <b>都市消费文化：</b>完成分组
+      </label>
+    </div>
+  </div>
+</Layout>
