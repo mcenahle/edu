@@ -183,8 +183,11 @@ a {
   text-decoration: none;
 }
 
+$link-text-underline-offset: 0.25rem;
+
 u {
   text-decoration: underline dotted;
+  text-underline-offset: $link-text-underline-offset;
 }
 
 .nav-link.active {
@@ -236,6 +239,7 @@ code {
 
   a {
     text-decoration: underline dotted;
+    text-underline-offset: $link-text-underline-offset;
   }
 
   p,
