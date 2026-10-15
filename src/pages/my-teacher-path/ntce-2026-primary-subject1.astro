@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "2026年小学教资科目一";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+
+    <iframe
+      src="/pdfjs/web/viewer.html?file=/documents/2026年下半年教师资格证考试《综合素质》（小学）.pdf"
+    ></iframe>
+  </div>
+</Layout>
