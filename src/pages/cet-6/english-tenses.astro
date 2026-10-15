@@ -1,0 +1,104 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "英语时态表";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+    <table class="table table-striped table-bordered text-center">
+      <thead>
+        <tr>
+          <th>时态</th>
+          <th>英文例句</th>
+          <th>主要强调什么</th></tr
+        >
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. 一般现在时</td>
+          <td>I use Git.</td>
+          <td>现在的习惯、事实</td>
+        </tr>
+        <tr>
+          <td>2. 现在进行时</td>
+          <td>I am using Git.</td>
+          <td>现在正在进行</td>
+        </tr>
+        <tr>
+          <td>3. 现在完成时</td>
+          <td>I have used Git for years.</td>
+          <td>过去延续至今的经历或状态</td>
+        </tr>
+        <tr>
+          <td>4. 现在完成进行时</td>
+          <td>I have been using Git all morning.</td>
+          <td>从过去到现在的持续过程</td>
+        </tr>
+        <tr>
+          <td>5. 一般过去时</td>
+          <td>I used Git yesterday.</td>
+          <td>过去发生的动作</td>
+        </tr>
+        <tr>
+          <td>6. 过去进行时</td>
+          <td>I was using Git at 8 p.m.</td>
+          <td>过去某一时刻正在进行</td>
+        </tr>
+        <tr>
+          <td>7. 过去完成时</td>
+          <td>I had used Git before college.</td>
+          <td>过去某个时间之前已经发生</td>
+        </tr>
+        <tr>
+          <td>8. 过去完成进行时</td>
+          <td>I had been using Git for two hours when he arrived.</td>
+          <td>过去某时间之前持续了一段时间</td>
+        </tr>
+        <tr>
+          <td>9. 一般将来时</td>
+          <td>I will use Git tomorrow.</td>
+          <td>未来将发生的动作</td>
+        </tr>
+        <tr>
+          <td>10. 将来进行时</td>
+          <td>I will be using Git at 8 p.m.</td>
+          <td>未来某一时刻正在进行</td>
+        </tr>
+        <tr>
+          <td>11. 将来完成时</td>
+          <td>I will have finished the commit by Friday.</td>
+          <td>未来某时间之前完成</td>
+        </tr>
+        <tr>
+          <td>12. 将来完成进行时</td>
+          <td>By Friday, I will have been using Git for a year.</td>
+          <td>到未来某时间，已经持续多久</td>
+        </tr>
+        <tr>
+          <td>13. 过去将来时</td>
+          <td>I knew I would use Git.</td>
+          <td>从过去看未来</td>
+        </tr>
+        <tr>
+          <td>14. 过去将来进行时</td>
+          <td>I knew I would be using Git that evening.</td>
+          <td>从过去看，未来某时正在进行</td>
+        </tr>
+        <tr>
+          <td>15. 过去将来完成时</td>
+          <td>I knew I would have finished the commit by Friday.</td>
+          <td>从过去看，未来某时之前完成</td>
+        </tr>
+        <tr>
+          <td>16. 过去将来完成进行时</td>
+          <td>I knew that by Friday I would have been using Git for a year.</td>
+          <td>从过去看，未来某时已持续多久</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Layout>
