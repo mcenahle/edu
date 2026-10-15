@@ -78,6 +78,9 @@ blockquote > cite {
   display: block;
   font-size: 14px;
   text-align: end;
+  &:before {
+    content: "—— ";
+  }
 }
 
 .icon-link > .bi {
