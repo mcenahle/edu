@@ -32,11 +32,6 @@ footer {
   margin-top: auto;
 }
 
-p,
-a {
-  word-break: break-all;
-}
-
 .container {
   max-width: 960px;
 }
@@ -45,6 +40,8 @@ a {
   width: 1200px;
   max-width: calc(100% - 32px);
   margin: 20px auto;
+
+  overflow-wrap: break-word;
 
   img {
     max-width: 100%;
