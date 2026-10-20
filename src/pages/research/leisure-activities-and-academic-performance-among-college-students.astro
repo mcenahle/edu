@@ -1,0 +1,75 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "大学生休闲活动与学业成绩简要文献综述";
+
+import DOI from "../../assets/DOI.svg";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+
+    <div class="alert alert-warning" role="alert">
+      <b>
+        <Icon name="mdi:papers-outline" /> 本人清楚论文发表进入 Zenodo、进入 <a
+          href="https://scholar.google.com/citations?user=fI1uYkUAAAAJ&hl=zh-CN"
+          target="_blank"
+          ><u>scholar.google.com</u> <Icon name="mdi:open-in-new" /></a
+        >、没有获得包括得到学术界认可在内的其它额外好处。详见 <a
+          href="/research/"><u>“个人迷你小论文”主页</u></a
+        >。
+      </b>
+    </div>
+
+    <p>
+      <i
+        >Leisure Activities and Academic Performance among College Students: A
+        Brief Literature Review</i
+      >
+    </p>
+    <p>
+      Chenhao Ge · 2026-10-02 · <DOI /> DOI: <a
+        href="https://doi.org/10.5281/zenodo.22996542"
+        target="_blank"
+        ><u>10.5281/zenodo.22996542</u> <Icon name="mdi:open-in-new" /></a
+      >
+    </p>
+
+    <div class="row g-4">
+      <div class="col-12 col-lg-8">
+        <section class="mb-4">
+          <h4>摘要</h4>
+
+          <p style="text-indent: 2em;">
+            当代大学生会参与各种各样的休闲活动，这些活动可能与学业表现之间存在一定关系。本文旨在综述大学生休闲活动与学业成绩之间的关系。通过检索相关的数据库，关键词包括大学生、休闲/体育活动、学业成绩/GPA等，并纳入了2020–2026年的相关文献。通过研究发现，体育活动与较好的学业表现之间存在一定关联，但研究结果并非完全一致；身体活动还与压力、恢复体验和幸福感有关；与此同时，休闲活动和学业表现之间的关系还可能受到时间分配、活动类型等因素的影响。因此，不能把休闲活动与学业成绩之间的关系概括为存在统一的正相关或者负相关。活动类型、测量方法、参与程度和研究情境等因素均需考虑。
+          </p>
+        </section>
+
+        <section>
+          <h4>全文</h4>
+          <iframe
+            src="/pdfjs/web/viewer.html?file=/documents/research/Leisure Activities and Academic Performance among College Students A Brief Literature Review.pdf"
+          ></iframe>
+        </section>
+      </div>
+
+      <aside class="col-12 col-lg-4">
+        <h4>引用</h4>
+
+        <p style="user-select: all;">
+          Ge, C. (2026). 大学生休闲活动与学业成绩简要文献综述. Zenodo.
+          https://doi.org/10.5281/zenodo.22996542
+        </p>
+
+        <!-- <button type="button" class="btn btn-primary">复制</button> -->
+
+        <h4>版权</h4>
+
+        <p>Copyright © 2026 Ge Chenhao (aka mcenahle).</p>
+      </aside>
+    </div>
+  </div>
+</Layout>
