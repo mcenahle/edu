@@ -59,10 +59,68 @@ import DOI from "../../assets/DOI.svg";
       <aside class="col-12 col-lg-4">
         <h4>引用</h4>
 
-        <p style="user-select: all;">
-          Ge, C. (2026). 大学生休闲活动与学业成绩简要文献综述. Zenodo.
-          https://doi.org/10.5281/zenodo.22996542
-        </p>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#APA">APA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#Harvard">Harvard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#MLA">MLA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#Vancouver"
+              >Vancouver</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#Chicago">Chicago</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#IEEE">IEEE</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div id="APA" class="container tab-pane active">
+            <p>
+              Ge, C. (2026). 大学生休闲活动与学业成绩简要文献综述. Zenodo.
+              https://doi.org/10.5281/zenodo.22996543
+            </p>
+          </div>
+          <div id="Harvard" class="container tab-pane">
+            <p>
+              Ge, C. (2026) “大学生休闲活动与学业成绩简要文献综述”. Zenodo.
+              Available at: https://doi.org/10.5281/zenodo.22996543.
+            </p>
+          </div>
+          <div id="MLA" class="container tab-pane">
+            <p>
+              Ge, C. “大学生休闲活动与学业成绩简要文献综述”. Zenodo, 2 Oct.
+              2026, https://doi.org/10.5281/zenodo.22996543.
+            </p>
+          </div>
+          <div id="Vancouver" class="container tab-pane">
+            <p>
+              1.Ge C. 大学生休闲活动与学业成绩简要文献综述. Zenodo; 2026.
+              doi:10.5281/zenodo.22996543
+            </p>
+          </div>
+          <div id="Chicago" class="container tab-pane">
+            <p>
+              Ge, C. “大学生休闲活动与学业成绩简要文献综述”. Preprint, Zenodo,
+              October 2, 2026. https://doi.org/10.5281/zenodo.22996543.
+            </p>
+          </div>
+          <div id="IEEE" class="container tab-pane">
+            <p>
+              [1]C. Ge, “大学生休闲活动与学业成绩简要文献综述”, Oct. 02, 2026,
+              Zenodo. doi: 10.5281/zenodo.22996543.
+            </p>
+          </div>
+        </div>
 
         <!-- <button type="button" class="btn btn-primary">复制</button> -->
 
@@ -73,3 +131,15 @@ import DOI from "../../assets/DOI.svg";
     </div>
   </div>
 </Layout>
+
+<style>
+  .tab-content {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    user-select: all;
+  }
+
+  .nav-link.active {
+    font-weight: bold;
+  }
+</style>
