@@ -1,0 +1,5 @@
+# Security contact for mcenahle.edu.pl
+Contact: mailto:hi@mcenahle.page
+Expires: 2027-04-25T00:00:00Z
+Canonical: https://mcenahle.edu.pl/.well-known/security.txt
+Preferred-Languages: zh, en
