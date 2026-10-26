@@ -126,6 +126,11 @@ import OpenAIRE from "../../assets/OpenAIRE.svg";
               Zenodo. doi: 10.5281/zenodo.22996543.
             </p>
           </div>
+          <div class="d-grid">
+            <button type="button" class="btn btn-primary" id="copyAPA"
+              >复制当前选择的引用格式</button
+            >
+          </div>
         </div>
 
         <!-- <button type="button" class="btn btn-primary">复制</button> -->
@@ -149,3 +154,21 @@ import OpenAIRE from "../../assets/OpenAIRE.svg";
     font-weight: bold;
   }
 </style>
+
+<script>
+  const button = document.getElementById("copyAPA");
+
+  button?.addEventListener("click", async () => {
+    try {
+      let copyText = document.querySelector(".tab-pane.active p");
+      await navigator.clipboard.writeText(copyText.textContent);
+      button.innerText = "已复制";
+
+      setTimeout(() => {
+        button.innerHTML = "复制当前选择的引用格式";
+      }, 2000);
+    } catch (error) {
+      console.error(error);
+    }
+  });
+</script>
