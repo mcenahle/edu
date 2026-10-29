@@ -12,11 +12,18 @@ const title = "高中毕业照片";
 
     <h4>拍摄日期：2024.4.7</h4>
 
-    <img src="/graduate/senior.jpeg" alt="高中毕业照片" style="width: 600px;" />
+    <picture>
+      <source srcset="/graduate/senior.jxl" type="image/jxl" />
+      <img src="/graduate/senior.jpeg" alt="高中毕业照" style="width: 600px;" />
+    </picture>
 
     <p>
       <small
-        ><a href="/graduate/senior.jpeg" target="_blank"><u>查看照片大图</u></a
+        ><a href="/graduate/senior.jpeg" target="_blank"
+          ><u>查看照片大图（<code>.jpeg</code>）</u></a
+        > | <a href="/graduate/senior.jxl" target="_blank"
+          ><Icon name="mdi:test-tube" />&nbsp;
+          <u>查看照片大图（<code>.jxl</code>）</u></a
         ></small
       >
     </p>
