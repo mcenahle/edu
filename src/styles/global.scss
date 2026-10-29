@@ -158,6 +158,14 @@ blockquote > cite {
   transform: translateX(4px);
 }
 
+.ecosystem-link > .icons {
+  transition: transform 0.4s;
+}
+
+.ecosystem-link:hover > .icons {
+  transform: translateX(4px);
+}
+
 a,
 .btn,
 .nav-link {
