@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "edu 网站生态系统";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">网站名称</th>
+          <th scope="col">URL</th>
+          <th scope="col">可访问性</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>edu mail</td>
+          <td>
+            <a href="https://mail.mcenahle.edu.pl/" target="_blank">
+              <u>跳转</u>&nbsp;
+              <Icon name="mdi:open-in-new" />
+            </a>
+          </td>
+          <td class="lock"><Icon name="mdi:lock" /> 访问受限</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>certs</td>
+          <td>
+            <a href="https://certs.mcenahle.edu.pl/" target="_blank">
+              <u>跳转</u>&nbsp;
+              <Icon name="mdi:open-in-new" />
+            </a>
+          </td>
+          <td class="lock"><Icon name="mdi:lock" /> 访问受限</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>hospital demo web</td>
+          <td>
+            <a href="https://hospital.mcenahle.edu.pl/" target="_blank">
+              <u>跳转</u>&nbsp;
+              <Icon name="mdi:open-in-new" />
+            </a>
+          </td>
+          <td class="check"><Icon name="mdi:check" /> 公开访问</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>存档的网站</td>
+          <td>
+            <a href="https://archive.mcenahle.edu.pl/" target="_blank">
+              <u>跳转</u>&nbsp;
+              <Icon name="mdi:open-in-new" />
+            </a>
+          </td>
+          <td class="check"><Icon name="mdi:check" /> 公开访问</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</Layout>
+
+<style>
+  .lock {
+    color: red;
+  }
+
+  .check {
+    color: green;
+  }
+</style>
