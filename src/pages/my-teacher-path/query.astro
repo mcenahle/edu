@@ -1,0 +1,29 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "教资成绩查询（20261106）";
+---
+
+<Layout title={title}>
+  <div class="mywords">
+    <h2>{title}</h2>
+
+    <div class="alert alert-success" role="alert">
+      <Icon name="mdi:access-time" /> 教资分数将于 11 月 6 日 10:00 公布。若无法正常返回结果，请使用常规方式&nbsp;<a
+        class="btn btn-success"
+        href="https://ntce.neea.edu.cn/ntce/"
+        target="_blank"
+        role="button"
+        ><Icon name="mdi:search" />&nbsp;
+        <u>查询教资分数</u>&nbsp;
+        <Icon name="mdi:open-in-new" /></a
+      >。
+    </div>
+
+    <iframe
+      src="https://cjcx.neea.edu.cn/html1/folder/21064/9282-1.htm?ptype=bs"
+      class="my-2"></iframe>
+  </div>
+</Layout>
