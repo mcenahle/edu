@@ -34,13 +34,16 @@ import { Icon } from "astro-icon/components";
     >
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">
-          <a href="/" style="color: white;">mcenahle EDU</a>
+          <a href="/" style="color: white;">
+            mcenahle EDU
+          </a>
         </h5>
         <button
           type="button"
           class="btn-close"
           data-bs-dismiss="offcanvas"
-          aria-label="Close"></button>
+          aria-label="Close"
+        ></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav flex-grow-1 justify-content-between">
@@ -56,32 +59,42 @@ import { Icon } from "astro-icon/components";
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/cet-6") ? "active" : ""}`}
-              href="/cet-6/">英语六级准备</a
+              href="/cet-6/"
             >
+              英语六级准备
+            </a>
           </li>
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/biology") ? "active" : ""}`}
-              href="/biology/">生物学</a
+              href="/biology/"
             >
+              生物学
+            </a>
           </li>
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/posts") ? "active" : ""}`}
-              href="/posts/">相关文章</a
+              href="/posts/"
             >
+              相关文章
+            </a>
           </li>
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/research") ? "active" : ""}`}
-              href="/research/">个人迷你小论文</a
+              href="/research/"
             >
+              个人迷你小论文
+            </a>
           </li>
           <li class="nav-item">
             <a
               class={`nav-link ${isActive("/class") ? "active" : ""}`}
-              href="/class/">班级课程</a
+              href="/class/"
             >
+              班级课程
+            </a>
           </li>
           <li class="nav-item dropdown">
             <a
@@ -89,29 +102,33 @@ import { Icon } from "astro-icon/components";
               href="javascript:void(0)"
               role="button"
               data-bs-toggle="dropdown"
-              aria-expanded="false">外部链接</a
+              aria-expanded="false"
             >
-            <ul
-              class="dropdown-menu m-0 border-0 shadow-sm p-2 dropdown-menu-end"
-            >
+              外部链接
+            </a>
+            <ul class="dropdown-menu m-0 border-0 shadow-sm p-2 dropdown-menu-end">
               <li>
                 <a
                   class="dropdown-item px-3 py-2 rounded"
                   href="https://orcid.org/0009-0009-8499-4500"
                   target="_blank"
-                  ><img
-                    src="https://orcid.org/sites/default/files/images/orcid_16x16.png"
+                >
+                  <img
+                    src="/pictures/ORCIDiD_icon16x16.webp"
                     style="width: 1em;"
                     alt="ORCID iD icon"
-                  /> My orcid ID <Icon name="mdi:open-in-new" /></a
-                >
+                  />{" "}
+                  My orcid ID <Icon name="mdi:open-in-new" />
+                </a>
               </li>
               <li>
                 <a
                   class="dropdown-item px-3 py-2 rounded"
                   href="https://mail.mcenahle.edu.pl/"
-                  target="_blank">edu webmail <Icon name="mdi:open-in-new" /></a
+                  target="_blank"
                 >
+                  edu webmail <Icon name="mdi:open-in-new" />
+                </a>
               </li>
             </ul>
           </li>
