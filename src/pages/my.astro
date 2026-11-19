@@ -15,13 +15,14 @@ const title = "个人介绍页面";
             target="_blank"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
-            ><img
+          >
+            <img
               src="https://avatars.githubusercontent.com/u/85427807"
               class="card-img"
               style="scale: 60%"
               alt="GitHub 头像"
-            /></a
-          >
+            />
+          </a>
           <div class="card-body">
             <h4 class="text-center">Mcenahle</h4>
             <hr />
@@ -33,19 +34,24 @@ const title = "个人介绍页面";
                 </tr>
                 <tr>
                   <th scope="row">ORCID</th>
-                  <td
-                    ><a
+                  <td>
+                    <a
                       href="https://orcid.org/0009-0009-8499-4500"
                       target="_blank"
                     >
                       <u>0009-0009-8499-4500</u>&nbsp;
-                      <Icon name="mdi:open-in-new" /></a
-                    ></td
-                  >
+                      <Icon name="mdi:open-in-new" />
+                    </a>
+                  </td>
                 </tr>
                 <tr>
                   <th scope="row">电子邮件</th>
-                  <td>hi@mcenahle.page</td>
+                  <td>
+                    <a href="mailto:hi@mcenahle.page" target="_blank">
+                      <u>hi@mcenahle.page</u>&nbsp;
+                      <Icon name="mdi:open-in-new" />
+                    </a>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -82,19 +88,20 @@ const title = "个人介绍页面";
             </p>
             <p>
               闲来无事，也会经常上
-              pmc。这应该是硕士医学生天天上的，但我也会上着玩，看看这些医学论文。这个网站我也最终背了出来：<a
-                href="https://pmc.ncbi.nlm.nih.gov"
-                target="_blank"
-                ><u>pmc.ncbi.nlm.nih.gov</u>&nbsp;
-                <Icon name="mdi:open-in-new" /></a
-              >。
+              pmc。这应该是硕士医学生天天上的，但我也会上着玩，看看这些医学论文。这个网站我也最终背了出来：
+              <a href="https://pmc.ncbi.nlm.nih.gov" target="_blank">
+                <u>pmc.ncbi.nlm.nih.gov</u>&nbsp;
+                <Icon name="mdi:open-in-new" />
+              </a>
+              。
             </p>
             <a
               href="https://github.com/mcenahle/"
               target="_blank"
               class="btn btn-primary"
-              >查看我的 GitHub <Icon name="mdi:open-in-new" /></a
             >
+              查看我的 GitHub <Icon name="mdi:open-in-new" />
+            </a>
           </div>
         </div>
 
@@ -103,7 +110,8 @@ const title = "个人介绍页面";
           <div class="card-body">
             <p>
               从 2026 年的国庆开始，我似乎开始了自己的 academic
-              之旅，尽管这所大专院校什么都没有，甚至 <code>.edu.cn</code> 的电子邮件都没有。
+              之旅，尽管这所大专院校什么都没有，甚至 <code>.edu.cn</code>{" "}
+              的电子邮件都没有。
             </p>
             <div class="card">
               <div class="card-body">
@@ -112,19 +120,37 @@ const title = "个人介绍页面";
                   Students: A Brief Literature Review
                 </h5>
                 <p class="card-text">
-                  2026-10-02, DOI: <a
+                  2026-10-02, DOI:{" "}
+                  <a
                     href="https://doi.org/10.5281/zenodo.22996542"
                     target="_blank"
-                    ><u>10.5281/zenodo.22996542</u>&nbsp;
-                    <Icon name="mdi:open-in-new" /></a
                   >
+                    <u>10.5281/zenodo.22996542</u>&nbsp;
+                    <Icon name="mdi:open-in-new" />
+                  </a>
                 </p>
                 <a
                   href="/research/leisure-activities-and-academic-performance-among-college-students/"
-                  class="btn btn-primary">查看</a
+                  class="btn btn-primary"
                 >
+                  查看
+                </a>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top: 18px;">
+          <div class="card-header">所获荣誉奖项</div>
+          <div class="card-body">
+            <ul>
+              <li>
+                2025-12-29：先进个人<i>（上海电影艺术职业学院）</i>。
+                <a href="https://mcenahle.edu.pl/advanced-individual">
+                  <u>查看</u>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -134,10 +160,10 @@ const title = "个人介绍页面";
             <figure>
               <blockquote class="blockquote">
                 <p>
-                  <i
-                    >The ending isn't any more important than any of the moments
-                    leading to it.</i
-                  >
+                  <i>
+                    The ending isn't any more important than any of the moments
+                    leading to it.
+                  </i>
                 </p>
               </blockquote>
               <figcaption class="blockquote-footer">
@@ -178,12 +204,13 @@ const title = "个人介绍页面";
           type="button"
           class="btn-close"
           data-bs-dismiss="modal"
-          aria-label="Close"></button>
+          aria-label="Close"
+        ></button>
       </div>
       <div class="modal-body">
         <p>
-          即将跳转 GitHub 网站（URL：<u>https://github.com/mcenahle</u
-          >）。是否继续？
+          即将跳转 GitHub 网站（URL：<u>https://github.com/mcenahle</u>
+          ）。是否继续？
         </p>
       </div>
       <div class="modal-footer">
@@ -191,11 +218,13 @@ const title = "个人介绍页面";
           href="https://github.com/mcenahle"
           target="_blank"
           type="button"
-          class="btn btn-primary">继续 <Icon name="mdi:open-in-new" /></a
+          class="btn btn-primary"
         >
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-          >关闭</button
-        >
+          继续 <Icon name="mdi:open-in-new" />
+        </a>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          关闭
+        </button>
       </div>
     </div>
   </div>
